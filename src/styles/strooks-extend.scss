@@ -1,0 +1,25 @@
+.bottom {
+  bottom: 0;
+}
+
+.top {
+  top: 0;
+}
+
+.right {
+  right: 0;
+}
+
+.left {
+  left: 0;
+}
+
+.scale {
+  &-15 {
+    transform: scale(1.5);
+  }
+}
+
+.bold {
+  font-weight: 900;
+}
