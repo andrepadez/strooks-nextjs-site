@@ -4,7 +4,7 @@ import { useForm, useStyleVars } from 'strooks'
 const App = () => {
   const { styleVars, propsMap, setVar, updateStyleVars } = useStyleVars(true)
   const formRef = useRef()
-  const [state, onChange] = useForm(formRef)
+  const { state, onChange } = useForm(formRef)
 
   const createNewProp = ev => {
     ev.preventDefault()

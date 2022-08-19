@@ -4,6 +4,7 @@ import { MdFullscreen, MdFullscreenExit } from 'react-icons/md'
 import useFullscreen from 'useFullscreen'
 import Image from 'next/image'
 import Head from 'next/head'
+import UseStyleVarsExample from '../Examples/UseStyleVarsExample'
 
 export default function Home() {
   const gifRef = useRef()
@@ -34,6 +35,7 @@ export default function Home() {
 
   return (
     <div className="container bg-black white" style={{ overflow: 'hidden' }}>
+      {/* <UseStyleVarsExample /> */}
       <section id="section-0" className="flex center vh-100 bg-black white">
         <div className="text-center flex column gap-5">
           <TypeWriter text={headerText} size={35 * (isSmallScreen ? 0.7 : 1)} time={2} clearBlink />
@@ -48,7 +50,7 @@ export default function Home() {
         </div>
       </section>
       <Head>
-        <link rel="preload" as="image" href="/gifs/00-strooks-flash-intro.mp4" />
+        <link rel="preload" as="image" href="/gifs/00-strooks-flash-intro.gif" />
       </Head>
       <section
         id="section-1"
@@ -56,11 +58,11 @@ export default function Home() {
       >
         <h1 className="">everything is easy with Strooks</h1>
         <div ref={gifRef} className="relative">
-          {isSmallScreen ? (
+          {/* {isSmallScreen ? (
             <Image src="/gifs/00-strooks-flash-intro.png" width={550} height={584} />
-          ) : (
-            <Image src="/gifs/00-strooks-flash-intro.gif" width={width} height={height} />
-          )}
+          ) : ( */}
+          <Image src="/gifs/00-strooks-flash-intro.gif" width={width} height={height} />
+          {/* )} */}
           <div className="absolute bottom right pr-3 pb-3 scale-15 teal pointer">
             {!isSmallScreen && (
               <h1>

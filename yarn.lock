@@ -1641,9 +1641,9 @@ strip-json-comments@^3.1.0, strip-json-comments@^3.1.1:
   integrity sha512-6fPc+R4ihwqP6N/aIv2f1gMH8lOVtWQHoqC4yK6oSDVVocumAsfCqjkXnqiYMhmMwS/mEHLp7Vehlt3ql6lEig==
 
 strooks@^1.0.45:
-  version "1.0.51"
-  resolved "https://registry.yarnpkg.com/strooks/-/strooks-1.0.51.tgz#51bd451e00acc247fcb14810cce74b67b8a9d345"
-  integrity sha512-u0Lf2pKxilgK65rItDmUFgnnTj3MqRR3g7sVplZfpbJtTDuKR2oeqn70b3Ac9BxO5FNe1P96Ta0xnE1ZoFQI7A==
+  version "1.0.52"
+  resolved "https://registry.yarnpkg.com/strooks/-/strooks-1.0.52.tgz#eb2433381cf0b7d5f6efc5b592b20944ebb10775"
+  integrity sha512-8nXhe+X8UJ1F2Tcp0gkksqiNuAxByEOgNWnMBy7rATe2eCrWb5dv8AyciPAbTvQibXNo/ldqcy0A/e5KTu+Dhw==
 
 styled-jsx@5.0.4:
   version "5.0.4"
