@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React, { useRef, useEffect } from 'react'
 import { useForm, useStyleVars } from 'strooks'
 
 const App = () => {
@@ -6,16 +6,12 @@ const App = () => {
   const formRef = useRef()
   const [state, onChange] = useForm(formRef)
 
-  console.log('styleVars', styleVars)
-
-  // setTimeout(() => updateStyleVars(), 1000)
-
   const createNewProp = ev => {
     ev.preventDefault()
-    // const { prop, val } = state
-    // console.log({ prop, val })
-    //   setVar(prop, val)
-    //   formRef.current.reset()
+    const { prop, val } = state
+    console.log({ prop, val })
+    setVar(prop, val)
+    formRef.current.reset()
   }
 
   return (
